@@ -119,9 +119,9 @@ class MyController @Inject()(cc: MessagesControllerComponents) {
 
 Controllers will always have a `FormBinding` instance build to honor the `play.http.parser.maxMemoryBuffer`. If you use the Forms from code outside a Controller, you may need to provide a `FormBinding`. For example, is you write unit tests you can use a `FormBinding` provided in `play.api.data.FormBinding.Implicits._` which uses a hardcoded limit which is good enough for tests. Add the implicit in scope: 
 
-````scala
+```scala
 import play.api.data.FormBinding.Implicits._
-```  
+```
 
 ### New fields and methods added to `FilePart` and `FileInfo`
 
